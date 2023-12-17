@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color:darkgrey;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Times New Roman', Times, serif;
+    }
+    .box{
+        width: 300px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #191919;
+        text-align: center;
+        opacity: 70%;
+        border-radius: 25px;
+    }
+    .box{
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .box input[type ="email number"],.box input[type = "password"],.box input[type="textarea"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #8886e9c5;
+        padding: 14px 19px; 
+        border-radius: 24px;
+        outline: none;
+        color: aqua;
+        width: 200px;
+        transition-duration: 0.25s;
+    }
+    .box input[type ="email number"]:focus,.box input[type = "password"]:focus,.box input[type="textarea"]:focus{
+        width: 260px;
+        border-color:chartreuse;
+        }
+    .box input[type = "submit"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #8886e9c5;
+        padding: 14px 40px; 
+        border-radius: 24px;
+        color:rgb(255, 255, 255);
+        outline: none;
+        transition-duration: 0.25s;
+        cursor:pointer;
+    }
+    .box input[type = "submit"]:hover{
+    background-color:rgb(56, 219, 64);
+    } 
+    .box{
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .box input[type = "submit"]:active{
+        background-color:rgb(239, 243, 11);
+        color: blue;
+        box-shadow: 2px 2px 1px 0px rgb(250, 243, 243);
+        }
+   
+        h7{
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+     h7 a{
+         color: rgb(239, 243, 11);
+     }
+     div{
+        color: red;
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <form class="box" action="signup.php" method="POST">
+        <h1>Sign Up</h1>
+        <div>
+            
+        </div>
+    <input type="email number"  name="name" placeholder="Name">
+    <input type="email number" id="email" name="email" placeholder="Gmail">
+    <input type="textarea" id="" placeholder="Address" name="address">
+    <input type="password" id="pass" name="password" placeholder="Create Password">
+    <input type="submit" id="btn" name="" value="Sign Up"> 
+    <h7>Allready have Account <a href="login.html">Login</a> </h7>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
